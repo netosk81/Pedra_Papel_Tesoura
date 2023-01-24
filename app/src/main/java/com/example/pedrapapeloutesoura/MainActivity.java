@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 (escolhaApp == "pedra" && escolhaUsuario == "tesoura")
 
         ){//App ganhador
+            textResultado.setText("Você Perdeu :(");
 
         }else if(
                 (escolhaUsuario == "tesoura" && escolhaApp == "papel") ||
@@ -64,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
                 (escolhaUsuario == "pedra" && escolhaApp == "tesoura")
 
         ){//Usuario ganhador
-
+            textResultado.setText("Você Ganhou :)");
         }else{//Empate
-
+            textResultado.setText("Empatamos ;)");
         }
 
 
-        System.out.println("Item Selecionado: " + escolhaApp);
+        //System.out.println("Item Selecionado: " + escolhaApp);
 
     }
 
